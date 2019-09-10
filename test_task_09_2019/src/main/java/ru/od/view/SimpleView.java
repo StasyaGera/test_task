@@ -25,7 +25,7 @@ public class SimpleView extends Panel implements View {
 
     private Logger logger = LoggerFactory.getLogger(SimpleView.class);
 
-    private static int page = 0;
+    private int page = 0;
     public final static int pageSize = 20;
 
     @Autowired
