@@ -6,10 +6,17 @@ import javax.persistence.Id;
 
 @Entity
 public class SubEntity {
-    @GeneratedValue
     @Id
+    @GeneratedValue
     private Long id;
     private String name;
+
+    public SubEntity() {
+    }
+
+    public SubEntity(String name) {
+        this.name = name;
+    }
 
     public Long getId() {
         return id;
